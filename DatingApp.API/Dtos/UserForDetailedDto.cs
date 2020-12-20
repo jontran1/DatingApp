@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using DatingApp.API.Models;
-using DatingApp.API.Models;
 
 namespace DatingApp.API.Dtos
 {
@@ -22,7 +21,7 @@ namespace DatingApp.API.Dtos
         public DateTime LastActive { get; set; }
 
         public string Introduction { get; set; }
-
+        public string LookingFor { get; set; }
         public string Interests { get; set; }
 
         public string City { get; set; }
