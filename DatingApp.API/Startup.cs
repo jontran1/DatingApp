@@ -52,7 +52,7 @@ namespace DatingApp.API
             
             // Cause policy.
             services.AddCors();
-
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             // Theres AddSingleton, and AddTransient. 
             // AddSingleton not good for concurrent processes.
             // AddTransient not good for large scale applications. 
