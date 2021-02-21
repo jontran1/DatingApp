@@ -65,7 +65,7 @@ export class MemberDetailComponent implements OnInit {
   //   });
   // }
 
-  selectTab(tabId: Number){
+  selectTab(tabId: number){
     this.memberTabs.tabs[tabId].active = true;
   }
 

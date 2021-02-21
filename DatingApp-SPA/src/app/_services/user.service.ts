@@ -108,4 +108,10 @@ constructor(private http : HttpClient) { }
   deleteMessage(id: Number, userId: Number){
     return this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + id, {});
   }
+
+  markAsRead(userId: Number, messageId: Number){
+    console.log(this.baseUrl + 'users/' + userId + '/messages/' + messageId + '/read');
+    this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + messageId + '/read', {})
+      .subscribe(); 
+  }
 }
